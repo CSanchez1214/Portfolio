@@ -10,4 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinks.style.transform = 'translate(100%)';
         }
     });
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 992) {
+            navLinks.style.transform = 'translate(0)'; // Reset transform
+            navLinks.classList.remove('active'); // Remove active class
+        } else {
+            navLinks.style.transform = 'translate(100%)'; // Close menu
+            navLinks.classList.remove('active'); // Remove active class
+        }
+    });
 });
