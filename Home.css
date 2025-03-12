@@ -26,6 +26,7 @@ nav {
 .nav-logo img {
     width: 100px;
     vertical-align: middle;
+    padding-top : 20px;
 }
 
 .nav-links {
